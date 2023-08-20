@@ -1,0 +1,59 @@
+.herolefttitle{
+    width: 428px;
+height: 80px;
+flex-shrink: 0;
+font-family: Jomhuria;
+font-size: 54px;
+font-style: normal;
+font-weight: 400;
+animation: bounce 0.5s infinite alternate;
+background: linear-gradient(90deg, #F409DD 0%, #E9EC62 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-left:250px;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px); /* Adjust the value to control the distance */
+    }
+  }
+
+.layerx{
+    margin-left:250px;
+    color: #FFF;
+font-family: Jomhuria;
+font-size: 34px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: -200px;
+
+
+}
+.layerx:hover{
+    color:gold;
+}
+
+
+@media screen and (max-width: 640px){
+    .herolefttitle{
+        width: 250px;
+        height: 100px;
+        flex-shrink: 0;
+        font-family: Jomhuria;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: linear-gradient(90deg, #F409DD 0%, #E9EC62 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left:70px;
+        }
+    }

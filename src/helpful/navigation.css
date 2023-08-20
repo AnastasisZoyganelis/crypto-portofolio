@@ -1,0 +1,133 @@
+.navigation-bar{
+    display: flex;
+align-items: flex-start;
+gap: 100px;
+list-style: none;
+}
+.navigation{
+    display: flex;
+    
+}
+
+
+.navigation-item1{
+    color: #FFFBFB;
+    font-family: Jomhuria;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left:20px;
+    text-decoration: none;
+    
+}
+.navigation-item2{
+    color: #FFFBFB;
+    font-family: Jomhuria;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left:20px;
+    text-decoration: none;
+    
+}
+.navigation-item3:hover{
+    color: white;
+}
+.navigation-item2:hover{
+    color: red;
+
+}
+.navigation-item1:hover,.navigation-item2:hover{
+    color: red;
+   
+}
+
+.navigation-item3{
+    color: red;
+    font-family: Jomhuria;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left:20px;
+    text-decoration: none;
+    
+}
+
+.button-login-link{
+    color:red;
+    font-family: Jomhuria;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.button-signup-link{
+    color:#FFFBFB;
+    font-family: Jomhuria;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.button-signup{
+    width: 133px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #F90D0D;
+    margin-top:1rem;   
+    margin-left:500px; 
+   
+}
+.button-login:hover,.button-signup:hover{
+    width: 140px;
+    
+}
+.button-login{
+    width: 133px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #fbf9f9;
+    color:#fc0606;
+    margin-top:1rem;
+    margin-left:30px;
+    
+}
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .navigation-bar {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .button-signup,
+    .button-login {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        text-align: center;
+        
+    }
+    .button-signup {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+    
+    .button-login {
+        width: 100px;
+        background: #fbf9f9;
+        color: #fc0606;
+    }
+
+    
+}
+
+

@@ -1,0 +1,78 @@
+
+/* CSS for moving titles */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.form-group input:focus + label {
+  transform: translateY(-20px); /* Move the label up when input is focused */
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Ensure the container takes the full viewport height */
+}
+.login-link{
+  text-decoration: none;
+}
+.login-link:hover{
+  
+  color:red;
+  
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(238, 234, 234, 0.2);
+  width: 300px;
+  
+ 
+}
+
+.container h2 {
+  text-align: center;
+  margin-top:-5px;
+  margin-bottom: 20px;
+  font-family: Jomhuria;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  animation: bounce 0.5s infinite alternate;
+  color:black;
+  background-clip: text;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+
+.form-group input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+.account-text-login{
+  font-weight: bold;
+}
