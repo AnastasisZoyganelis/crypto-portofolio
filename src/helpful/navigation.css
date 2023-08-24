@@ -57,7 +57,7 @@ list-style: none;
 }
 
 .button-login-link{
-    color:red;
+    color:rgb(255, 251, 251);
     font-family: Jomhuria;
     font-size: 40px;
     font-style: normal;
@@ -75,59 +75,136 @@ list-style: none;
     text-decoration: none;
 }
 
-.button-signup{
+.button-signup {
     width: 133px;
     height: 44px;
     flex-shrink: 0;
-    border-radius: 25px;
-    background: #F90D0D;
-    margin-top:1rem;   
-    margin-left:500px; 
-   
-}
-.button-login:hover,.button-signup:hover{
-    width: 140px;
-    
-}
-.button-login{
-    width: 133px;
-    height: 44px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: #fbf9f9;
-    color:#fc0606;
-    margin-top:1rem;
-    margin-left:30px;
-    
-}
-/* Media Query for Mobile */
-@media (max-width: 767px) {
-    .navigation-bar {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+    border: 2px solid #f7f3f3; /* Add a border to create the ghost effect */
+    border-radius: 10px;
+    background: transparent; /* Set background to transparent */
+    color: #F90D0D;
+    margin-top: 1rem;
+    margin-left: 700px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transitions for hover effect */
+  }
+  
+  .button-signup:hover {
+    background-color: #fcfafa; /* Change background on hover */
+    .button-signup-link{
+        color:red;
     }
+  }
+.button-login {
+    width: 133px;
+    height: 44px;
+    flex-shrink: 0;
+    border: 2px solid #fc0606; /* Add a border to create the ghost effect */
+    border-radius: 10px;
+    background: transparent; /* Set background to transparent */
+    color: #fc0606;
+    margin-top: 1rem;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transitions for hover effect */
+  }
+  
+  .button-login:hover {
+    background-color: #fc0606; /* Change background on hover */
+    .button-login-link{ color: white; /* Change text color on hover */}
+   
+  }
+.button-portofolio{
+  background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left:750px;
+    margin-bottom: -200px;
+    position: relative;top:-53px;
+}
+.button-portofolio:hover{
+  background: linear-gradient(45deg, #0056b3, #009ac7);
+  color: #fff;
+}
+.button-logout{
+    background-color: transparent;
+    border: 2px solid #ff000d;
+    color: #ff0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+        margin-left:900px;
+        margin-top:-40px
+}
+.button-logout:hover{
+    background: linear-gradient(45deg, #b30000, #d4010c);
+    color: #fff;
+}
+.user-email{
+    color:white;
+    margin-left:650px;
+    margin-top:20px;
+    color:#FFFBFB;
+    font-family: Jomhuria;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navigation-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .navigation-item1,
+    .navigation-item2,
+    .navigation-item3 {
+      font-size: 28px;
+      margin-left: 0;
+    }
+  
+    .user-email {
+      margin-left: 50px;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+  
     .button-signup,
-    .button-login {
-        font-size: 24px;
-        margin-left: 0;
-        margin-top: 0.5rem;
-        text-align: center;
+    .button-login,
+    .button-logout {
+      width: 60%;
+      height: 44px;
+      margin-top: 1rem;
+      margin-left: 140px;
+    }
+    .button-portofolio{
+        padding: 2px 5px;
+        margin-left:-115px;
+        position: relative;top:-60px;
+    }
+    .button-logout{
+        width:115px;
+        padding: 2px 5px;
+        margin-left:100px;
+        margin-top:40px;
         
     }
-    .button-signup {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100px;
+    .button-logout:hover{
+        background: linear-gradient(45deg, #b30000, #d4010c);
+        color: #fff;
     }
     
-    .button-login {
-        width: 100px;
-        background: #fbf9f9;
-        color: #fc0606;
-    }
-
-    
-}
+  }
 
 

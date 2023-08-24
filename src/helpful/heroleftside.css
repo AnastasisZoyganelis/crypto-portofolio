@@ -1,3 +1,5 @@
+
+
 .herolefttitle{
     width: 428px;
 height: 80px;
@@ -22,8 +24,25 @@ margin-left:250px;
       transform: translateY(-5px); /* Adjust the value to control the distance */
     }
   }
-
-.layerx{
+.layer0{
+  margin-top: -650px;
+}
+.layer1{
+  position:relative;top:-490px;
+}
+.layer2{
+  position:relative;top:-200px;
+}
+.layer-gaming{
+  position: relative;top:340px;
+}
+.layer-memes{
+  position: relative;top:340px;
+}
+.layer-defi{
+  position: relative;top:340px;
+}
+.layer2,.layer1,.layer0,.layer-gaming,.layer-memes,.layer-defi{
     margin-left:250px;
     color: #FFF;
 font-family: Jomhuria;
@@ -31,11 +50,10 @@ font-size: 34px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin-top: -200px;
-
+width:100px;
 
 }
-.layerx:hover{
+.layer1:hover,.layer2:hover,.layer0:hover,.layer-gaming:hover,.layer-memes:hover{
     color:gold;
 }
 
@@ -56,4 +74,36 @@ margin-top: -200px;
         -webkit-text-fill-color: transparent;
         margin-left:70px;
         }
+        .layer2,.layer1,.layer0,.layer-gaming,.layer-memes,.layer-defi{
+          margin-left:50px;
+          position:relative;top:130px;
+          color: #FFF;
+          font-family: Jomhuria;
+          font-size: 34px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width:100px;
+        }
+        .layer0{
+          margin-top: -650px;
+        }
+        .layer1{
+          position:relative;top:-380px;
+        }
+        .layer2{
+          position:relative;top:-120px;
+        }
+        .layer-gaming{
+          position: relative;top:390px;
+        }
+        .layer-memes{
+          position: relative;top:390px;
+        }
+        .layer-defi{
+          position: relative;top:380px;
+        }
+
+
+
     }

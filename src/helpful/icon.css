@@ -1,6 +1,7 @@
 .coin-1,.coin-2,.coin-3,.coin-4,.coin-5,.coin-6,.coin-7,.coin-8,.coin-9,.coin-10,
 .coin-11,.coin-12,.coin-13,.coin-14,.coin-15,.coin-16,.coin-17,.coin-18,.coin-19,.coin-20,
-.coin-21,.coin-22,.coin-23,.coin-24,.coin-25,.coin-26,.coin-27,.coin-28,.coin-29,.coin-30{
+.coin-21,.coin-22,.coin-23,.coin-24,.coin-25,.coin-26,.coin-27,.coin-28,.coin-29,.coin-30,.coin-31,.coin-32,.coin-33,.coin-34,.coin-35
+,.coin-36,.coin-37,.coin-38,.coin-39,.coin-40,.coin-41,.coin-42,.coin-43,.coin-44,.coin-45{
     width: 35px; /* Adjust as needed */
         height: 35px; /* Make width and height equal for a perfect circle */
         border-radius: 50%; /* Makes the element a circle */
@@ -12,16 +13,31 @@
         margin-top: 10px;
         
 }
-.coin-21,.coin-22,.coin-23,.coin-24,.coin-25,.coin-26,.coin-27,.coin-28,.coin-29,.coin-30{
-    position: relative;right:-230px;
+.framer-icons-defi,.framer-icons-gaming,.framer-icons-layer0,.framer-icons-layer1,.framer-icons-layer2,.framer-icons-memes{
+  margin-left:230px;
+}
+.framer-icons-layer0{
 
+  margin-top: -290px;
+  margin-bottom: 30px;
 }
-.coin-1,.coin-2,.coin-3,.coin-4,.coin-5,.coin-6,.coin-7,.coin-8,.coin-9,.coin-10{
-    position: relative;right:-230px;top:-53px;
+.framer-icons-layer2{
+
+  margin-top:30px;
 }
-.coin-11,.coin-12,.coin-13,.coin-14,.coin-15,.coin-16,.coin-17,.coin-18,.coin-19,.coin-20{
-   
-        position: relative;right:-230px;top:-28px;
+
+
+.framer-icons-gaming{
+
+  margin-top:35px;
+}
+.framer-icons-memes{
+
+  margin-top:35px;
+}
+.framer-icons-defi{
+  margin-top: 35px;
+
 }
 
 .coin-1:hover,.coin-2:hover,.coin-3:hover,.coin-4:hover,.coin-5:hover,.coin-6:hover,.coin-7:hover,.coin-8:hover,.coin-9:hover,.coin-10:hover,
@@ -49,8 +65,7 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    
-    
+    position: relative;top:-210px;
     background-color:white;
     background-clip: text;
     -webkit-background-clip: text;
@@ -73,12 +88,12 @@
     margin-left:40px;
     gap: 3px; /* Add spacing between buttons */
     border-radius: 20px;
-    
+    position: relative;top:-210px;
   }
   
   .pressed-button {
     background-color: #ffffff;
-    padding: 8px;
+    padding: 5px;
     width:100px;
     border:2px solid black;
     color:black;
@@ -93,6 +108,7 @@
 .error-message{
     color:red;
     font-weight: bold;
+    position:relative;top:-100px;
 }
 
 
@@ -108,6 +124,7 @@
         margin-right: 20px;
         margin-left: 8px;
         font-weight: bold;
+        position: relative;top:-210px;
       
 }
 .action-button-erase{
@@ -120,6 +137,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
+    position: relative;top:-210px;
   
 }
 .action-button-erase:hover{
@@ -132,12 +150,14 @@
 .input-container {
     margin-left: 780px;
     align-items: center;
+    position: relative;top:-210px;
     
   }
   .input-container-over5{
     margin-left: 1100px;
     align-items: center;
     margin-top: -350px;
+    position: relative;top:-30px;
   }
   
   .input-container-textarea {
@@ -149,7 +169,7 @@
     font-size: 14px;
   }
   
-  .input-container button {
+  .input-container button,.input-container-over5 button {
     background-color: #007bff;
     color: white;
     padding: 8px 16px;
@@ -159,23 +179,12 @@
     transition: background-color 0.3s;
     font-size: 14px;
   }
-  .input-container button:hover{
+  .input-container button:hover,.input-container-over5 button:hover{
     background-color: #0056b3;
   }
-  .input-container-over5 button {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 14px;
-  }
+
   
-  .input-container-over5 button:hover {
-    background-color: #0056b3;
-  }
+ 
 .manual-input-title{
     width: 428px;
     height: 80px;
@@ -190,4 +199,104 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.login-first-message{
+  color:rgb(245, 9, 9);
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;top:-210px;
+}
+
+@media screen and (max-width: 640px){
+  .coin-1,.coin-2,.coin-3,.coin-4,.coin-5,.coin-6,.coin-7,.coin-8,.coin-9,.coin-10,
+.coin-11,.coin-12,.coin-13,.coin-14,.coin-15,.coin-16,.coin-17,.coin-18,.coin-19,.coin-20,
+.coin-21,.coin-22,.coin-23,.coin-24,.coin-25,.coin-26,.coin-27,.coin-28,.coin-29,.coin-30,.coin-31,.coin-32,.coin-33,.coin-34,.coin-35
+,.coin-36,.coin-37,.coin-38,.coin-39,.coin-40,.coin-41,.coin-42,.coin-43,.coin-44,.coin-45{
+        width: 25px; /* Adjust as needed */
+        height: 25px; /* Make width and height equal for a perfect circle */
+        
+        
+
+}
+.framer-icons-defi,.framer-icons-gaming,.framer-icons-layer0,.framer-icons-layer1,.framer-icons-layer2,.framer-icons-memes{
+  margin-left:30px;
+}
+.framer-icons-layer0{
+
+  margin-top: -165px;
+  margin-bottom: 30px;
+}
+.framer-icons-layer2{
+
+  margin-top:30px;
+}
+
+
+.framer-icons-gaming{
+
+  margin-top:35px;
+}
+.framer-icons-memes{
+
+  margin-top:35px;
+}
+.framer-icons-defi{
+  margin-top: 35px;
+
+}
+.portofolio-title{
+ 
+  font-size: 25px;
+ 
+  position: relative;top:-85px;
+ 
+  
+}
+.portofolio-title:hover{
+  background-color:gold;
+  
+}
+.pressed-buttons-column {
+    
+  margin-top: -480px;
+  margin-left:280px;
+}
+.pressed-buttons-list {
+  margin-left:0px;
+  position: relative;top:-90px;
+}
+.action-button-submit{
+ 
+  position: relative;top:-90px;
+
+}
+.action-button-erase{
+
+position: relative;top:-50px;right:120px;
+
+}
+.login-first-message{
+  
+  font-size: 14px;
+ 
+  position: relative;top:-50px;
+}
+.error-message{
+  position:relative;top:50px;
+}
+.input-container {
+  margin-left: 50px;
+  align-items: center;
+  position: relative;top:260px;
+ 
+  
+}
+.input-container-over5{
+  margin-left: 50px;
+  align-items: center;
+  position: fixed;top:1050px;
+  margin-bottom: 20px;
+  
+}
+
 }

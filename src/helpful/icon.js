@@ -1,15 +1,63 @@
 import React from 'react'
 import './icon.css';
 import { useState } from 'react';
-
+import { useAuth } from './AuthContext';
 
 
 const Icon = () => {
+  const { isLoggedIn } = useAuth();
   const [pressedButtons, setPressedButtons] = useState([]);
   const [message, setMessage] = useState('');
   const [textInput, setTextInput] = useState('');
   const [inputerror, setInputerror] = useState('');
   const [enteredTexts, setEnteredTexts] = useState([]);
+
+
+  const handleSubmitClick = async (e)=> {
+
+    e.preventDefault();
+    if (isLoggedIn){
+    // Send a POST request to add all pressed buttons to the database
+      try{
+      const response = await fetch('http://localhost:3301/cart', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ buttons: pressedButtons }), // Send all pressed buttons to the server
+      })
+      
+          if (response.ok) {
+            // Buttons added successfully
+            // You can update the UI or show a success message
+            setPressedButtons([]);
+            alert('Coins added successfully');
+          } else {
+            if (response.status === 400) {
+              alert('Bad request: Check your input data');
+            } else if (response.status === 401) {
+              alert('Unauthorized: You are not allowed to perform this action');
+            } else if (response.status === 500) {
+              alert('Server error: Please try again later');
+            }
+            else if (response.status === 515) {
+              alert('Portofolio updated');
+            } else {
+              alert('An error occurred: ' + response.statusText);
+            }
+          }
+        }
+        catch(error)  {
+          // Handle network or other errors
+          alert('Network error');
+          console.log(error);
+        };
+    }else{
+      alert('Please Log in first');
+    }
+
+  };
+
 
   const handleButtonClick = (buttonId) => {
     if (pressedButtons.length < 10) {
@@ -25,11 +73,10 @@ const Icon = () => {
     }
     
   };
-
+  
   const handleEraseClick = () => {
     if (pressedButtons.length > 0) {
-      const updatedButtons = pressedButtons.slice(0, -1); // Remove the last element
-      setPressedButtons(updatedButtons);
+      setPressedButtons([]); // Set the array to an empty array
       setMessage('');
     }
   };
@@ -60,7 +107,8 @@ const Icon = () => {
           <h2 className='manual-input-title'>ENTER THE COIN MANUALLY</h2>
           <input
             type="text"
-            placeholder="Enter your coin"
+            placeholder="Enter your coin "
+            title='Like this INJECTIVE(INJ)'
             maxLength={20}
             className='input-container-textarea'
             pattern="^[^;<>]+$"
@@ -86,14 +134,22 @@ const Icon = () => {
         <button className='coin-3' id='button-coin-3' onClick={() => handleButtonClick('button-coin-3')}></button>
         <button className='coin-4' id='button-coin-4' onClick={() => handleButtonClick('button-coin-4')} ></button>
         <button className='coin-5' id='button-coin-5'onClick={() => handleButtonClick('button-coin-5')}></button>
+        
+        
+      </div>
+      <div className='framer-icons-layer1'>
+        <button className='coin-6' id='button-coin-6' onClick={() => handleButtonClick('button-coin-6')}></button>
+        <button className='coin-7' id='button-coin-7' onClick={() => handleButtonClick('button-coin-7')}></button>
+        <button className='coin-8' id='button-coin-8' onClick={() => handleButtonClick('button-coin-8')}></button>
+        <button className='coin-9' id='button-coin-9' onClick={() => handleButtonClick('button-coin-9')}></button>
+        <button className='coin-10' id='button-coin-10' onClick={() => handleButtonClick('button-coin-10')}></button>
         <br/>
         <button className='coin-6' id='button-coin-6' onClick={() => handleButtonClick('button-coin-6')}></button>
         <button className='coin-7' id='button-coin-7' onClick={() => handleButtonClick('button-coin-7')}></button>
-        <button className='coin-7' id='button-coin-8' onClick={() => handleButtonClick('button-coin-8')}></button>
+        <button className='coin-8' id='button-coin-8' onClick={() => handleButtonClick('button-coin-8')}></button>
         <button className='coin-9' id='button-coin-9' onClick={() => handleButtonClick('button-coin-9')}></button>
         <button className='coin-10' id='button-coin-10' onClick={() => handleButtonClick('button-coin-10')}></button>
-      </div>
-      <div className='framer-icons-layer1'>
+        <br/>
         <button className='coin-11' id='button-coin-11' onClick={() => handleButtonClick('button-coin-11')}></button>
         <button className='coin-12' id='button-coin-12' onClick={() => handleButtonClick('button-coin-12')}></button>
         <button className='coin-13' id='button-coin-13' onClick={() => handleButtonClick('button-coin-13')}></button>
@@ -119,6 +175,27 @@ const Icon = () => {
         <button className='coin-29' id='button-coin-29' onClick={() => handleButtonClick('button-coin-29')}></button>
         <button className='coin-30' id='button-coin-30' onClick={() => handleButtonClick('button-coin-30')}></button>
       </div>
+      <div className='framer-icons-gaming'>
+        <button className='coin-26' id='button-coin-26' onClick={() => handleButtonClick('button-coin-26')}></button>
+        <button className='coin-27' id='button-coin-27' onClick={() => handleButtonClick('button-coin-27')}></button>
+        <button className='coin-28' id='button-coin-28' onClick={() => handleButtonClick('button-coin-28')}></button>
+        <button className='coin-29' id='button-coin-29' onClick={() => handleButtonClick('button-coin-29')}></button>
+        <button className='coin-30' id='button-coin-30' onClick={() => handleButtonClick('button-coin-30')}></button>
+      </div>
+      <div className='framer-icons-memes'>
+        <button className='coin-26' id='button-coin-26' onClick={() => handleButtonClick('button-coin-26')}></button>
+        <button className='coin-27' id='button-coin-27' onClick={() => handleButtonClick('button-coin-27')}></button>
+        <button className='coin-28' id='button-coin-28' onClick={() => handleButtonClick('button-coin-28')}></button>
+        <button className='coin-29' id='button-coin-29' onClick={() => handleButtonClick('button-coin-29')}></button>
+        <button className='coin-30' id='button-coin-30' onClick={() => handleButtonClick('button-coin-30')}></button>
+      </div>
+      <div className='framer-icons-defi'>
+        <button className='coin-26' id='button-coin-26' onClick={() => handleButtonClick('button-coin-26')}></button>
+        <button className='coin-27' id='button-coin-27' onClick={() => handleButtonClick('button-coin-27')}></button>
+        <button className='coin-28' id='button-coin-28' onClick={() => handleButtonClick('button-coin-28')}></button>
+        <button className='coin-29' id='button-coin-29' onClick={() => handleButtonClick('button-coin-29')}></button>
+        <button className='coin-30' id='button-coin-30' onClick={() => handleButtonClick('button-coin-30')}></button>
+      </div>
       <div className='pressed-buttons-column'>
         <h2 className='portofolio-title'>Current Portofolio(MAX 10)</h2>
         <div className='pressed-buttons-list'>
@@ -134,9 +211,10 @@ const Icon = () => {
         <p className="error-message">{message}</p>
         
         <div className="buttons-row">
-          <button className="action-button-submit">Submit</button>
-          <button className="action-button-erase" onClick={handleEraseClick}>Erase</button>
+          <button className="action-button-submit" onClick={handleSubmitClick}>Submit</button>
           
+          <button className="action-button-erase" onClick={handleEraseClick}>Erase</button>
+          {!isLoggedIn && <p className="login-first-message">*Log in first</p>}
         </div>
       </div>
       {pressedButtons.length <= 5 ? (
