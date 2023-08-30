@@ -8,10 +8,10 @@ const app = express();
 const port = 3301;
 
 const db = mysql.createPool({
-  host: 'localhost',
-  user: 'anastasis',
-  password: 'pba2004ath',
-  database: 'database1',
+  host: '34.155.157.207',
+  user: 'userOnline',
+  password: '',
+  database: 'crypto',
 });
 
 app.use(bodyParser.json());
@@ -161,7 +161,7 @@ app.post('/portofolio', async (req, res) => {
     }
 
     const user = results[0];
-    console.log(user);
+   
     return res.json(user); // Send the user data as JSON response
   } catch (error) {
     console.error('Error:', error);

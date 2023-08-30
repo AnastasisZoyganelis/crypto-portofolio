@@ -3,10 +3,6 @@ import './FormSignup.css';
 import { Link, useNavigate  } from 'react-router-dom';
 
 
-console.log('DB_HOST:', process.env.DB_HOST);
-console.log('DB_USER:', process.env.DB_USER);
-console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
-console.log('DB_DATABASE:', process.env.DB_DATABASE);
 const FormSignup = () => {
   const [errors, setErrors] = useState([]);
   const [registrationError, setRegistrationError] = useState('');
@@ -85,18 +81,23 @@ const FormSignup = () => {
           <form onSubmit={handleFormSubmit}>
             <div className="form-group" method='POST'>
                 <label className="discordName">Discord Name</label>
-                <input type="text" placeholder='enter your discord name' maxLength={20} id="discordName" name="discordName" pattern="^[^;<>]+$" required/>
+                <input type="text" placeholder='enter your discord name' maxLength={20} id="discordName" name="discordName" pattern="^[^;<>\s{}]+$" required/>
             </div>
             <div className="form-group">
                 <label className="email">Email</label>
-                <input type="email" id="email"  placeholder='enter your email' name="email"  maxLength={80}  pattern="^[^;<>]+$" required/>
+                <input type="email" id="email"  placeholder='enter your email' name="email"  maxLength={80}  pattern="^[^;<>\s{}]+$" required/>
             </div>
             <div className="form-group">
                 <label className="password">Password</label>
-                <input className="password" id="password"  placeholder='enter your password' name="password" maxLength={30} pattern="^[^;<>]+$" required/>
+                <input className="password" id="password"  placeholder='enter your password' name="password" maxLength={30} pattern="^[^;<>\s{}]+$" required/>
             </div>
             <button type="submit" className="btn">Register</button>
         </form>
+        <p>
+          <a href="TERMS-AND-CONSIDERATIONS" target="_blank" rel="noopener noreferrer">
+            Terms and Conditions 
+          </a>
+        </p>
         <p className='account-text-login'>Already have an account? <Link to="/login" className='login-link'>Login</Link></p>
     </div>
     </div>

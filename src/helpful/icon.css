@@ -1,8 +1,8 @@
-.coin-1,.coin-2,.coin-3,.coin-4,.coin-5,.coin-6,.coin-7,.coin-8,.coin-9,.coin-10,
-.coin-11,.coin-12,.coin-13,.coin-14,.coin-15,.coin-16,.coin-17,.coin-18,.coin-19,.coin-20,
-.coin-21,.coin-22,.coin-23,.coin-24,.coin-25,.coin-26,.coin-27,.coin-28,.coin-29,.coin-30,.coin-31,.coin-32,.coin-33,.coin-34,.coin-35
-,.coin-36,.coin-37,.coin-38,.coin-39,.coin-40,.coin-41,.coin-42,.coin-43,.coin-44,.coin-45{
-    width: 35px; /* Adjust as needed */
+.Polcadot,.Thorchain,.Cosmos,.Chainlink,.Quant,.Bitcoin,.Ethereum,.BNB,.Cardano,.Solana,
+.Bitcoin-Bash,.Avalance,.Hedera,.NEAR,.INJECTIVE,.FANTOM,.SUI,.APTOS,.AZERO,.XRP,
+.STELLAR,.KASPA,.ALGORAND,.POLYGON,.ARBITRUM,.OPTIMISM,.METIS,.STACKS,.LOOPRING,.ILLUVIUM,.GALA,.APECOIN,.MAGIC
+,.DOGECOIN,.PEPE,.SHIBA-INU,.FLOKI,.INJECTIVE,.CURVE-DAO,.AAVE,.TERRA-LUNA,.SYNTHETIC{
+        width: 35px; /* Adjust as needed */
         height: 35px; /* Make width and height equal for a perfect circle */
         border-radius: 50%; /* Makes the element a circle */
         overflow: hidden;
@@ -11,51 +11,174 @@
         margin-left:20px;
         cursor:pointer;
         margin-top: 10px;
-        
 }
+.SYNTHETIC{
+  background-image: url(../assets/snx.webp);
+}
+.TERRA-LUNA{
+  background-image: url(../assets/lync.jpg);
+}
+.CURVE-DAO{
+  background-image: url(../assets/curve.jpg);
+}
+.AAVE{
+  background-image: url(../assets/aave.jpg);
+}
+.SHIBA-INU{
+  background-image: url(../assets/shiba.jpg);
+}
+.FLOKI{
+  background-image: url(../assets/floki.jpg);
+}
+.PEPE{
+  background-image: url(../assets/pepe.jpg);
+}
+.GALA{
+  background-image: url(../assets/gala.jpg);
+}
+.ILLUVIUM{
+  background-image: url(../assets/ilv.jpg);
+}
+.APECOIN{
+  background-image: url(../assets/ape.jpg);
+}
+.MAGIC{
+  background-image: url(../assets/magic.png);
+}
+.LOOPRING{
+  background-image: url(../assets/lrc.jpg);
+}
+.STACKS{
+  background-image: url(../assets/stx.jpg);
+}
+.OPTIMISM{
+  background-image: url(../assets/op.png);
+}
+.ARBITRUM{
+  background-image: url(../assets/arb.jpg);
+}
+.METIS{
+  background-image: url(../assets/metis.jpg);
+}
+.POLYGON{
+  background-image: url(../assets/matic.jpg);
+}
+.STELLAR{
+  background-image: url(../assets/stellar.jpg);
+}
+.ALGORAND{
+  background-image: url(../assets/algorand.jpg);
+}
+.AZERO{
+  background-image: url(../assets/azero.jpg);
+}
+.KASPA{
+  background-image: url(../assets/kaspa.jpg);
+}
+.SUI{
+  background-image: url(../assets/sui.png);
+}
+.Avalance{
+  background-image: url(../assets/avax.jpg);
+}
+.APTOS{
+  background-image: url(../assets/aptos.jpg);
+}
+.INJECTIVE{
+  background-image: url(../assets/inj.jpg);
+}
+.KASPA{
+  background-image: url(../assets/kaspa.jpg);
+}
+.SUI{
+  background-image: url(../assets/sui.png);
+}
+.FANTOM{
+  background-image: url(../assets/fantom.jpg);
+}
+.NEAR{
+  background-image: url(../assets/near.jpg);
+}
+.KASPA{
+  background-image: url(../assets/kaspa.jpg);
+}
+.Hedera{
+  background-image: url(../assets/hedera.png);
+}
+.Bitcoin-Bash{
+  background-image: url(../assets/bch.png);
+}
+.Cosmos{
+  background-image: url(../assets/cosmos.jpg);
+}
+.Quant{
+  background-image: url(../assets/quant.jpg);
+}
+.Thorchain{
+  background-image: url(../assets/thorchain.webp);
+}
+.Polcadot{
+  background-image: url(../assets/polkadot.png);
+}
+.Bitcoin{
+  background-image: url(../assets/btc.jpg);
+}
+.Cardano{
+  background-image: url(../assets/ada.jpg);
+}
+.Ethereum{
+  background-image: url(../assets/eth.png);
+}
+.Solana{
+  background-image: url(../assets/sol.jpg);
+}
+.DOGECOIN{
+  background-image: url(../assets/doge.jpg);
+}
+.XRP{
+  background-image: url(../assets/xrp.png);
+}
+.Chainlink{
+  background-image: url(../assets/link.jpg);
+}
+.BNB{
+  background-image: url(../assets/bnb.png);
+}
+
+
+
+
 .framer-icons-defi,.framer-icons-gaming,.framer-icons-layer0,.framer-icons-layer1,.framer-icons-layer2,.framer-icons-memes{
   margin-left:230px;
 }
 .framer-icons-layer0{
-
   margin-top: -290px;
   margin-bottom: 30px;
 }
 .framer-icons-layer2{
-
   margin-top:30px;
 }
-
-
 .framer-icons-gaming{
-
   margin-top:35px;
 }
 .framer-icons-memes{
-
   margin-top:35px;
 }
 .framer-icons-defi{
   margin-top: 35px;
-
 }
-
-.coin-1:hover,.coin-2:hover,.coin-3:hover,.coin-4:hover,.coin-5:hover,.coin-6:hover,.coin-7:hover,.coin-8:hover,.coin-9:hover,.coin-10:hover,
-.coin-11:hover,.coin-12:hover,.coin-13:hover,.coin-14:hover,.coin-15:hover,.coin-16:hover,.coin-17:hover,.coin-18:hover,
-.coin-19:hover,.coin-20:hover,
-.coin-21:hover,.coin-22:hover,.coin-23:hover,.coin-24:hover,.coin-25:hover,.coin-26:hover,
-.coin-27:hover,.coin-28:hover,.coin-29:hover,.coin-30:hover{
-
+.Polcadot:hover,.Thorchain:hover,.Cosmos:hover,.Chainlink:hover,.Quant:hover,.Bitcoin:hover,.Ethereum:hover,.BNB:hover,.Cardano:hover,.Solana:hover,
+.Bitcoin-Bash:hover,.Avalance:hover,.Hedera:hover,.NEAR:hover,.INJECTIVE:hover,.FANTOM:hover,.SUI:hover,.APTOS:hover,
+.AZERO:hover,.XRP:hover,.DOGECOIN:hover,
+.STELLAR:hover,.KASPA:hover,.ALGORAND:hover,.POLYGON:hover,
+.ARBITRUM:hover,.OPTIMISM:hover,.METIS:hover,.STACKS:hover,.LOOPRING:hover,.ILLUVIUM:hover,.GALA:hover,.APECOIN:hover,.MAGIC:hover
+,.PEPE:hover,.SHIBA-INU:hover,.FLOKI:hover,.INJECTIVE:hover,.CURVE-DAO:hover,.AAVE:hover,.TERRA-LUNA:hover,.SYNTHETIC:hover{
     border:2px solid red;
 }
-
-
   .pressed-buttons-column {
-    
     margin-top: -480px;
     margin-left:800px;
   }
-
   .portofolio-title{
     color: #FFF;
     width: 428px;
@@ -73,14 +196,12 @@
     margin-bottom: -30px;
   }
   .portofolio-title:hover{
-    background-color:gold;
-    
+    background-color:gold;   
 }
-  
   .pressed-buttons-list {
     background-color: rgb(248, 246, 246);
     color: white;
-    width:120px;
+    width:150px;
     padding: 10px;
     display: flex;
     flex-direction: column; /* Display buttons vertically */
@@ -89,12 +210,11 @@
     gap: 3px; /* Add spacing between buttons */
     border-radius: 20px;
     position: relative;top:-210px;
-  }
-  
-  .pressed-button {
+  }  
+.pressed-button {
     background-color: #ffffff;
     padding: 5px;
-    width:100px;
+    width:140px;
     border:2px solid black;
     color:black;
 }
@@ -110,8 +230,6 @@
     font-weight: bold;
     position:relative;top:-100px;
 }
-
-
 .action-button-submit{
         background-color: #007bff;
         color: white;
@@ -125,7 +243,6 @@
         margin-left: 8px;
         font-weight: bold;
         position: relative;top:-210px;
-      
 }
 .action-button-erase{
     background-color: #e9060d;
@@ -137,8 +254,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
-    position: relative;top:-210px;
-  
+    position: relative;top:-210px; 
 }
 .action-button-erase:hover{
     background-color: #7f0309;
@@ -146,30 +262,25 @@
 .action-button-submit:hover{
     background-color: #0056b3;
 }
-
 .input-container {
     margin-left: 780px;
     align-items: center;
     position: relative;top:-210px;
-    
   }
-  .input-container-over5{
+.input-container-over5{
     margin-left: 1100px;
     align-items: center;
     margin-top: -350px;
     position: relative;top:-30px;
   }
-  
-  .input-container-textarea {
-    
+.input-container-textarea { 
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
     font-size: 14px;
   }
-  
-  .input-container button,.input-container-over5 button {
+.input-container button,.input-container-over5 button {
     background-color: #007bff;
     color: white;
     padding: 8px 16px;
@@ -179,12 +290,9 @@
     transition: background-color 0.3s;
     font-size: 14px;
   }
-  .input-container button:hover,.input-container-over5 button:hover{
+.input-container button:hover,.input-container-over5 button:hover{
     background-color: #0056b3;
   }
-
-  
- 
 .manual-input-title{
     width: 428px;
     height: 80px;
@@ -194,7 +302,6 @@
     margin-bottom: -20px;
     font-style: normal;
     font-weight: 400;
-    
     background: linear-gradient(90deg, #F409DD 0%, #E9EC62 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -208,56 +315,40 @@
 }
 
 @media screen and (max-width: 640px){
-  .coin-1,.coin-2,.coin-3,.coin-4,.coin-5,.coin-6,.coin-7,.coin-8,.coin-9,.coin-10,
-.coin-11,.coin-12,.coin-13,.coin-14,.coin-15,.coin-16,.coin-17,.coin-18,.coin-19,.coin-20,
-.coin-21,.coin-22,.coin-23,.coin-24,.coin-25,.coin-26,.coin-27,.coin-28,.coin-29,.coin-30,.coin-31,.coin-32,.coin-33,.coin-34,.coin-35
-,.coin-36,.coin-37,.coin-38,.coin-39,.coin-40,.coin-41,.coin-42,.coin-43,.coin-44,.coin-45{
+  .Polcadot,.Thorchain,.Cosmos,.Chainlink,.Quant,.Bitcoin,.Ethereum,.BNB,.Cardano,.Solana,
+  .Bitcoin-Bash,.Avalance,.Hedera,.NEAR,.INJECTIVE,.FANTOM,.SUI,.APTOS,.AZERO,.XRP,
+  .STELLAR,.KASPA,.ALGORAND,.POLYGON,.ARBITRUM,.OPTIMISM,.METIS,.STACKS,.LOOPRING,.ILLUVIUM,.GALA,.APECOIN,.MAGIC
+  ,.DOGECOIN,.PEPE,.SHIBA-INU,.FLOKI,.INJECTIVE,.CURVE-DAO,.AAVE,.TERRA-LUNA,.SYNTHETIC{
         width: 25px; /* Adjust as needed */
         height: 25px; /* Make width and height equal for a perfect circle */
-        
-        
-
 }
 .framer-icons-defi,.framer-icons-gaming,.framer-icons-layer0,.framer-icons-layer1,.framer-icons-layer2,.framer-icons-memes{
   margin-left:30px;
 }
 .framer-icons-layer0{
-
   margin-top: -165px;
   margin-bottom: 30px;
 }
 .framer-icons-layer2{
-
   margin-top:30px;
 }
-
-
 .framer-icons-gaming{
-
   margin-top:35px;
 }
 .framer-icons-memes{
-
   margin-top:35px;
 }
 .framer-icons-defi{
   margin-top: 35px;
-
 }
 .portofolio-title{
- 
   font-size: 25px;
- 
   position: relative;top:-85px;
- 
-  
 }
 .portofolio-title:hover{
   background-color:gold;
-  
 }
 .pressed-buttons-column {
-    
   margin-top: -480px;
   margin-left:280px;
 }
@@ -266,19 +357,13 @@
   position: relative;top:-90px;
 }
 .action-button-submit{
- 
   position: relative;top:-90px;
-
 }
 .action-button-erase{
-
 position: relative;top:-50px;right:120px;
-
 }
 .login-first-message{
-  
   font-size: 14px;
- 
   position: relative;top:-50px;
 }
 .error-message{
@@ -288,15 +373,12 @@ position: relative;top:-50px;right:120px;
   margin-left: 50px;
   align-items: center;
   position: relative;top:260px;
- 
-  
 }
 .input-container-over5{
   margin-left: 50px;
   align-items: center;
   position: fixed;top:1050px;
   margin-bottom: 20px;
-  
 }
 
 }

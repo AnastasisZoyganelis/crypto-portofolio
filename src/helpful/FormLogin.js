@@ -29,7 +29,7 @@ const FormLogin = () => {
 
     if (newErrors.length === 0) {
       try {
-        const response = await fetch('http://localhost:3301/login', {
+        const response = await fetch('https://localhost:3301/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -81,11 +81,11 @@ const FormLogin = () => {
            
             <div className="form-group">
                 <label className="email">Email</label>
-                <input type="email" id="email"  placeholder='enter your email' name="email"  maxLength={80}  pattern="^[^;<>{}]+$" required/>
+                <input type="email" id="email"  placeholder='enter your email' name="email"  maxLength={80}  pattern="^[^;<>{}\s]+$" required/>
             </div>
             <div className="form-group">
                  <label className="password">Password</label>
-                <input className="password" id="password"  placeholder='enter your password' name="password" maxLength={30} pattern="^[^;<>{}]+$" required/>
+                <input className="password" id="password"  placeholder='enter your password' name="password" maxLength={30} pattern="^[^;<>{}\s]+$" required/>
             </div>
             <button type="submit" className="btn">Login</button>
         </form>

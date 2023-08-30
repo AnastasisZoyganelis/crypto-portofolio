@@ -1,0 +1,19 @@
+.info-text-stats{
+    color:red;
+    font-size: 25px;
+    text-align: center;
+}
+.pie-frame{
+    margin-left: 700px;
+    width: 400px;
+    height: 500px;
+}
+@media screen and (max-width: 768px){
+    .pie-frame{
+        margin-left: 100px;
+    }
+    .info-text-stats{
+        font-size: 10px;
+        text-align: center;
+    }
+}

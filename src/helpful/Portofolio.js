@@ -56,6 +56,7 @@ function Portofolio() {
         </tr>
         <tr>
             <td className='table-td'>{Finaldata.coin1}</td>
+            
         </tr>
         <tr>
             <td className='table-td'>{Finaldata.coin2}</td>
